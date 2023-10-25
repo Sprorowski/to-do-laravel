@@ -7,7 +7,11 @@ This is a Laravel project that serves as a test, implementing various features i
 ```bash
 composer install
 ```
-2. Run the make file command
+2.  Configure the .env file with your database settings:
+```bash
+cp .env.example .env
+```
+3. Run the make file command
 ```bash
 make up
 ```
