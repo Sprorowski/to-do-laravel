@@ -1,5 +1,5 @@
 up:
-	./vendor/bin/sail up -d
+	./vendor/bin/sail up --build
 down:
 	./vendor/bin/sail down
 
@@ -11,3 +11,6 @@ optimize:
 
 refresh:
 	docker-compose exec laravel.test php artisan migrate:fresh --seed
+
+test:
+	docker-compose exec laravel.test php artisan test
